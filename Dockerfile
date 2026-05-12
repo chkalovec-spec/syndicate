@@ -10,6 +10,6 @@ RUN uv sync --frozen --no-dev
 
 ENV PATH="/app/.venv/bin:$PATH"
 
-EXPOSE 8501
+EXPOSE 8080
 
-CMD ["streamlit", "run", "src/syndicate/app.py", "--server.address", "0.0.0.0", "--client.toolbarMode", "minimal"]
+CMD ["start"]
