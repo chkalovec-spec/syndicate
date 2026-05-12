@@ -8,7 +8,6 @@ def main() -> None:
         "streamlit",
         "run",
         str(app_path),
-        "--server.port", "8080",
         "--server.address", "0.0.0.0",
         "--client.toolbarMode", "minimal"
     ])
