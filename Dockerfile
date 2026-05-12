@@ -12,4 +12,4 @@ ENV PATH="/app/.venv/bin:$PATH"
 
 EXPOSE 8501
 
-CMD ["start"]
+CMD ["streamlit", "run", "src/syndicate/app.py", "--server.address", "0.0.0.0", "--client.toolbarMode", "minimal"]
