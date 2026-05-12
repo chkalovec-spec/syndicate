@@ -44,7 +44,7 @@ jobs:
           username: ${{ secrets.SSH_USER }}
           key: ${{ secrets.SSH_KEY }}
           script: |
-            echo "${{ secrets.SYNDICATE_DOTENV_FILE }}" > /opt/apps/syndicate/.env
+            echo "${{ secrets.DOTENV_FILE }}" > /opt/apps/syndicate/.env
 
             docker pull ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:latest
 
